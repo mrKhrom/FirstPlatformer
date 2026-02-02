@@ -29,8 +29,9 @@ public class PlayerAttack : MonoBehaviour
         anim.SetTrigger("attack");
         cooldownTimer = 0;
 
-        fireballs[findFireball()].transform.position = firePoint.position;
-        fireballs[findFireball()].GetComponent<Prejectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        int fireballIndex = findFireball();
+        fireballs[fireballIndex].transform.position = firePoint.position;
+        fireballs[fireballIndex].GetComponent<Prejectile>().SetDirection(Mathf.Sign(transform.localScale.x));
 
     }
 

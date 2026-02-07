@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Prejectile : MonoBehaviour
+public class Projectile : MonoBehaviour
 {
 
     [SerializeField] private float speed;
@@ -43,11 +43,12 @@ public class Prejectile : MonoBehaviour
         hit = false;
         boxCollider.enabled = true;
 
-        float localScaleX = transform.localScale.x;
-        if (Mathf.Sign(localScaleX) != _direction)
-            localScaleX = -localScaleX;
+        // ensure projectile is not parented to player (or any other object)
+        transform.SetParent(null);
 
-        transform.localScale = new Vector3(localScaleX, transform.localScale.y, transform.localScale.z);
+        // use SpriteRenderer.flipX to mirror the sprite/animation instead of negative scale
+        float scaleX = Mathf.Abs(transform.localScale.x);
+        transform.localScale = new Vector3(scaleX, transform.localScale.y, transform.localScale.z);
         if (spriteRenderer != null)
             spriteRenderer.flipX = _direction < 0;
     }

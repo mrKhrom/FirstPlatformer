@@ -18,7 +18,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack())
+        if ((Input.GetMouseButton(0) || Input.GetKeyDown(KeyCode.F)) && cooldownTimer > attackCooldown && playerMovement.canAttack())
             Attack();
 
         cooldownTimer += Time.deltaTime;
@@ -30,8 +30,11 @@ public class PlayerAttack : MonoBehaviour
         cooldownTimer = 0;
 
         int fireballIndex = findFireball();
+        // place fireball at the fire point and detach from player so later player flips/movement
+        // won't affect the fireball's world transform or trajectory
         fireballs[fireballIndex].transform.position = firePoint.position;
-        fireballs[fireballIndex].GetComponent<Prejectile>().SetDirection(Mathf.Sign(transform.localScale.x));
+        fireballs[fireballIndex].transform.SetParent(null);
+        fireballs[fireballIndex].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
 
     }
 

@@ -19,12 +19,12 @@ public class CameraController : MonoBehaviour
     private void Update()
     {
         // Room camera
-        //transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX, transform.position.y, transform.position.z), ref velocity, speed);
+        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(currentPosX, transform.position.y, transform.position.z), ref velocity, speed);
     
         // Follow player with vertical clamp
-        float targetY = Mathf.Clamp(player.position.y, minY, maxY);
-        transform.position = new Vector3(player.position.x + lookAhead, targetY, transform.position.z);
-        lookAhead = Mathf.Lerp(lookAhead, aheadDistance * Input.GetAxis("Horizontal"), Time.deltaTime * cameraSpeed);    
+        // float targetY = Mathf.Clamp(player.position.y, minY, maxY);
+        // transform.position = new Vector3(player.position.x + lookAhead, targetY, transform.position.z);
+        // lookAhead = Mathf.Lerp(lookAhead, aheadDistance * Input.GetAxis("Horizontal"), Time.deltaTime * cameraSpeed);    
     }
 
     public void MoveCamera(Transform _newRoom)

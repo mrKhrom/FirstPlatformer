@@ -53,6 +53,7 @@
     <Compile Include="Assets/Scripts/Health/Healthbar.cs" />
     <Compile Include="Assets/Scripts/Rooms/Door.cs" />
     <Compile Include="Assets/Scripts/Enemies/EnemyDamage.cs" />
+    <Compile Include="Assets/Scripts/Enemies/Firetrap.cs" />
     <Compile Include="Assets/Scripts/Player/PlayerMovment.cs" />
     <Compile Include="Assets/Scripts/Player/Projectile.cs" />
     <Compile Include="Assets/Scripts/Health/HealthCollectible.cs" />

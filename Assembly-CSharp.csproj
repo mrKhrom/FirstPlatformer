@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Enemies/Enemy_Sideways.cs" />
     <Compile Include="Assets/Scripts/Health/Healthbar.cs" />
+    <Compile Include="Assets/Scripts/Rooms/Room.cs" />
     <Compile Include="Assets/Scripts/Rooms/Door.cs" />
     <Compile Include="Assets/Scripts/Enemies/EnemyDamage.cs" />
     <Compile Include="Assets/Scripts/Enemies/Firetrap.cs" />

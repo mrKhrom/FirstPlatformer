@@ -57,6 +57,7 @@
     <Compile Include="Assets/Scripts/Player/PlayerMovment.cs" />
     <Compile Include="Assets/Scripts/Player/Projectile.cs" />
     <Compile Include="Assets/Scripts/Enemies/Arrowtrap.cs" />
+    <Compile Include="Assets/Scripts/Enemies/SpikeHead.cs" />
     <Compile Include="Assets/Scripts/Health/HealthCollectible.cs" />
     <Compile Include="Assets/Scripts/Player/PlayerAttack.cs" />
     <Compile Include="Assets/Scripts/Health/Health.cs" />

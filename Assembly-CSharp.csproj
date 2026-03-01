@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/Health/Healthbar.cs" />
+    <Compile Include="Assets/Scripts/Enemies/Enemy/EnemyPatrol.cs" />
     <Compile Include="Assets/Scripts/Rooms/Room.cs" />
     <Compile Include="Assets/Scripts/Rooms/Door.cs" />
     <Compile Include="Assets/Scripts/Enemies/Enemy/SpikeHead.cs" />

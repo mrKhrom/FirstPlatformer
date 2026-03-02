@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: a93caedcaa299f14e978454757f38077
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Traps/Blocks/HitSide (22x22).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: 573c22279c1eb734696548dfba41d021
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Traps/Fire/Hit (16x32).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

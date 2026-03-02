@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: 6ed38972fd0f4024c91aca33394d3cdd
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Traps/Spike Head/Blink (54x52).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

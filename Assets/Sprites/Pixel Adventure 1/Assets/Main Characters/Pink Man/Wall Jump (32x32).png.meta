@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: 603abb83490921841976d0f1b2045f23
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Main Characters/Pink Man/Wall Jump (32x32).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

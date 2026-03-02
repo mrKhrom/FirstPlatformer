@@ -1,13 +1,5 @@
 fileFormatVersion: 2
 guid: e2b42ecdf887de146ada435603f4c95b
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Items/Checkpoints/End/End (Pressed)
-    (64x64).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

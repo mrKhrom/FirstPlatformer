@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: 18a451ae5d817e04bbf3101eaed9466e
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Main Characters/Ninja Frog/Hit (32x32).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

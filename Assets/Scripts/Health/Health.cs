@@ -9,10 +9,14 @@ public class Health : MonoBehaviour
     private Animator anim;
     private bool dead;
 
-    [Header ("iFrames")]
+    [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
     [SerializeField] private int numberOfFlashes;
-    private SpriteRenderer spriteRend;   
+    private SpriteRenderer spriteRend;
+
+    [Header("Components")]
+    [SerializeField] private Behaviour[] components;
+    private bool invulnerable;
 
     private void Awake()
     {
@@ -20,14 +24,15 @@ public class Health : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
     }
-
     public void TakeDamage(float _damage)
     {
-        currentHealth = Mathf.Max(currentHealth - _damage, 0);
+        if (invulnerable) return;
+        currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
+
         if (currentHealth > 0)
         {
             anim.SetTrigger("hurt");
-            StartCoroutine(Invunerability());       
+            StartCoroutine(Invunerability());
         }
         else
         {
@@ -35,28 +40,21 @@ public class Health : MonoBehaviour
             {
                 anim.SetTrigger("die");
 
-                //Player
-                if (GetComponent<PlayerMovement>() != null)
-                    GetComponent<PlayerMovement>().enabled = false;
+                //Deactivate all attached component classes
+                foreach (Behaviour component in components)
+                    component.enabled = false;
 
-                //Enemy
-                if (GetComponent<EnemyPatrol>() != null)
-                    GetComponent<EnemyPatrol>().enabled = false;
-                
-                if (GetComponent<MeleeEnemy>() != null)
-                    GetComponent<MeleeEnemy>().enabled = false;
-                
                 dead = true;
-            }       
+            }
         }
     }
     public void AddHealth(float _value)
     {
-        currentHealth = Mathf.Min(currentHealth + _value, startingHealth);
+        currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);
     }
-
     private IEnumerator Invunerability()
     {
+        invulnerable = true;
         Physics2D.IgnoreLayerCollision(10, 11, true);
         for (int i = 0; i < numberOfFlashes; i++)
         {
@@ -66,5 +64,6 @@ public class Health : MonoBehaviour
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));
         }
         Physics2D.IgnoreLayerCollision(10, 11, false);
+        invulnerable = false;
     }
 }

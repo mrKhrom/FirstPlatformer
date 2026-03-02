@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: cf4eb9361d321834693bc5dcefbb5c4f
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Traps/Blocks/HitTop (22x22).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

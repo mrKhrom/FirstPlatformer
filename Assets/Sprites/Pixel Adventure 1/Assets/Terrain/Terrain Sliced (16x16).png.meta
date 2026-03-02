@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: fc584d329b77b9545b9c9c8bb829e553
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Terrain/Terrain Sliced (16x16).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

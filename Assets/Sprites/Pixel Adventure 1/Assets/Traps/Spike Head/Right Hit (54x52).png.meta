@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: 75b1a2f7cb6173c4d826963a35f18512
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Traps/Spike Head/Right Hit (54x52).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

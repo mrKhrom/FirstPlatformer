@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: f42176bbc0b84b54e83c161abc6eb071
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Traps/Arrow/Idle (18x18).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

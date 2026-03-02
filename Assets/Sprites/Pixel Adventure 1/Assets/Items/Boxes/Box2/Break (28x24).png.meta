@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: a766483fddea6b64f827838e089d1970
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Items/Boxes/Box2/Break (28x24).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

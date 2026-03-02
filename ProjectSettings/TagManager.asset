@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 3
+  serializedVersion: 2
   tags:
   - Ground
   - Enemy
@@ -13,10 +13,10 @@ TagManager:
   - 
   - Water
   - UI
+  - 
+  - 
   - Ground
   - Wall
-  - 
-  - 
   - Player
   - Enemy
   - 
@@ -44,16 +44,14 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 350991497
+    uniqueID: 2233872901
     locked: 0
   - name: Foreground
-    uniqueID: 881822121
+    uniqueID: 2519254405
+    locked: 0
+  - name: Player
+    uniqueID: 960489153
     locked: 0
   - name: Ground
-    uniqueID: 4068577173
+    uniqueID: 2649148703
     locked: 0
-  - name: Plyaer
-    uniqueID: 3650853913
-    locked: 0
-  m_RenderingLayers:
-  - Default

@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: a2c110585eb710b408972fbc3b96136d
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Items/Fruits/Strawberry.png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

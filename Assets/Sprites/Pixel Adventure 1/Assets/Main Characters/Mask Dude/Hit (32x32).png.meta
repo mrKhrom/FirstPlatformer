@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: b234dd527243d1042a19b2cf7ef17cd7
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Main Characters/Mask Dude/Hit (32x32).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

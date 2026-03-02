@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: 1ddc9afd21fec77489b1248d18f31b68
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Items/Fruits/Apple.png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

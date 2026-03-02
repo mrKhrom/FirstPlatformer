@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: b1f24b3bc2e2f1d4b858657ad5c115a0
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Items/Fruits/Bananas.png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

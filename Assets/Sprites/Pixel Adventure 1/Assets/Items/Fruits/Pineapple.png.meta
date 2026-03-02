@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: 131e485692e27e84c86170dad18cda85
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Items/Fruits/Pineapple.png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

@@ -1,12 +1,5 @@
 fileFormatVersion: 2
 guid: c515460e432a71b45bd7784aebe881d7
-AssetOrigin:
-  serializedVersion: 1
-  productId: 155360
-  packageName: Pixel Adventure 1
-  packageVersion: 1.0
-  assetPath: Assets/Pixel Adventure 1/Assets/Items/Boxes/Box3/Hit (28x24).png
-  uploadId: 332803
 TextureImporter:
   internalIDToNameTable:
   - first:

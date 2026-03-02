@@ -8922,6 +8922,7 @@ MonoBehaviour:
   rightEdge: {fileID: 1380963148}
   enemy: {fileID: 1323634125}
   speed: 2
+  idleDuration: 1
   anim: {fileID: 1323634126}
 --- !u!1 &1744659633
 GameObject:
@@ -11097,6 +11098,10 @@ PrefabInstance:
     - target: {fileID: 1886454754331488441, guid: 76a791cf50b174396864bbd2a6ab6c31, type: 3}
       propertyPath: m_Name
       value: MeleeEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 2019007966152646260, guid: 76a791cf50b174396864bbd2a6ab6c31, type: 3}
+      propertyPath: range
+      value: 2.45
       objectReference: {fileID: 0}
     - target: {fileID: 6503103416163973677, guid: 76a791cf50b174396864bbd2a6ab6c31, type: 3}
       propertyPath: m_LocalPosition.x

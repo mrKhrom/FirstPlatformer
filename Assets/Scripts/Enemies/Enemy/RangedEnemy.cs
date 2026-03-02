@@ -1,15 +1,16 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;   
 
-public class MeleeEnemy : MonoBehaviour
+public class RangedEnemy : MonoBehaviour
 {
     [Header("Attack parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
     [SerializeField] private int damage;
     
+    [Header("Ranged parameters")]
+    [SerializeField] private Transform firepoint;
+    [SerializeField] private GameObject[] fireballs;
+
     [Header("Collider parameters")]
     [SerializeField] private float colliderDistance;
     [SerializeField] private BoxCollider2D boxCollider;
@@ -20,7 +21,6 @@ public class MeleeEnemy : MonoBehaviour
 
     // References
     private Animator anim;
-    private Health playerHealth;
     private EnemyPatrol enemyPatrol;
 
     private void Awake()
@@ -39,7 +39,7 @@ public class MeleeEnemy : MonoBehaviour
             if (cooldownTimer >= attackCooldown)
             {
                 cooldownTimer = 0;
-                anim.SetTrigger("meleeAttack");
+                anim.SetTrigger("rangedAttack");
             }
         }
         if (enemyPatrol != null)
@@ -59,24 +59,30 @@ public class MeleeEnemy : MonoBehaviour
         float dist     = range * colliderDistance;   // whatever makes sense
 
         RaycastHit2D hit = Physics2D.BoxCast(origin, size, angle, dir, dist, playerLayer);
-        
-        if (hit.collider != null)
-            playerHealth = hit.transform.GetComponent<Health>();
 
         return hit.collider != null;
     }
+    private void RangedAttack()
+    {
+        cooldownTimer = 0;
+        fireballs[FindFireball()].transform.position = firepoint.position;
+        fireballs[FindFireball()].GetComponent<EnemyProjectile>().ActivateProjectile();
+    }
+
+    private int FindFireball()
+    {
+        for (int i = 0; i < fireballs.Length; i++)
+        {
+            if (!fireballs[i].activeInHierarchy)
+                return i;
+        }
+        return 0;
+    }
+    
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireCube(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance, 
             new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z));
     }
-    private void DamagePlayer()
-    {
-        //If player is still in range, damage him
-        if (PlayerInSight())
-            playerHealth.TakeDamage(damage);
-  
-    }
-        
 }

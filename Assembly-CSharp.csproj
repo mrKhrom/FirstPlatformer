@@ -64,6 +64,7 @@
     <Compile Include="Assets/Scripts/Health/Health.cs" />
     <Compile Include="Assets/Scripts/Enemies/Traps/EnemyProjectile.cs" />
     <Compile Include="Assets/Scripts/Core/CameraController.cs" />
+    <Compile Include="Assets/Scripts/Enemies/Enemy/RangedEnemy.cs" />
     <Compile Include="Assets/Scripts/Enemies/Traps/EnemyDamage.cs" />
     <Compile Include="Assets/Scripts/Enemies/Traps/Arrowtrap.cs" />
   </ItemGroup>

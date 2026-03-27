@@ -216,6 +216,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   jumpPower: 20
+  coyoteTime: 0.25
+  extraJumps: 2
+  wallJumpX: 2000
+  wallJumpY: 750
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
@@ -248,7 +252,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  fireballSound: {fileID: 0}
+  fireballSound: {fileID: 8300000, guid: e319f119145d548d39122cd44e2803c6, type: 3}
 --- !u!95 &339728066529960375
 Animator:
   serializedVersion: 7
